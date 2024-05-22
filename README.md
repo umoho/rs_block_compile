@@ -1,10 +1,18 @@
-# Can you compile this Rust code?
+# Can you compile this Rust code __without blocking__?
 
-Cargo, rustc and rust-analyzer will blocking when compile this code ...
+Cargo and rust-analyzer will blocking when compile this code ...
 
-I'm not sure if it's a bug on stable Rust.
+I'm not sure if it's a bug on __stable__ Rust.
 
 You can try to compile it on your computer.
+
+![Picture 1](vscode.png "Delayed exit from 'Building'")
+
+![Picture 2](htop.png "High resource occupancy")
+
+My idea: Normally, suspicious code should be refused compilation,
+but now it is continuously being compiled without exiting,
+which is very strange.
 
 # Tool version and target
 
